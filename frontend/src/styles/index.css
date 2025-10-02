@@ -1,47 +1,65 @@
-/*Header for small news container*/
-.small_news_header {                
-    height: 10vh;                
-    width: 30vw;                
-    background-color: white;         
-    border: 2px solid black;   
-    margin: auto;  
-    text-align: center;
-    line-height: 10vh;
+/* Main container for homepage slider grid layout */
+.grid_slider_layout {
+  padding-top: 0.45em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
 }
 
-/*Image for small news*/
-.small_news_img {
-    height: 35vh;
-    width: 20vw;
-    border: 2px solid black;
-    margin: auto;
-    display: block;
+/* Main heading above the slider section */
+.homepage_slider_header {
+  height: 10vh;
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+  padding-top: 1em;
+  line-height: 10vh;
+  font-size: 28px;
+  font-family: 'Baloo 2', cursive;
+  color: white;
 }
 
-/*Description for small news*/
-.small_news_description {
-    height: 20vh;
-    width: 20vw;
-    border: 2px solid black;
-    margin: auto;
-    background-color: white;
-    text-align: center;
+/* Container for slider images */
+.homepage_slider_img {
+  height: 40vh;
+  width: 22vw;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
 }
 
-/*Container for small news*/
-.small_news_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5vw;
+/* Description text below each slider image */
+.homepage_slider_paragraph {
+  height: 30vh;
+  width: 22vw;
+  margin: auto;
+  padding-top: 1em;
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+  font-size: 18px;
+  color: white;
 }
 
-html,
+/* Heading above each slider description */
+.homepage_slider_description_header {
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5em;
+  text-decoration: underline;
+  font-family: 'Baloo 2', cursive;
+  font-size: 22px;
+  color: white;
+}
+
+/* Main website body styles */
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(40, 40, 40, 1);
 }
 
+/* Featured series banner at top of homepage */
 .series__block {
   height: 70vh;
   width: 100vw;
@@ -54,23 +72,31 @@ body {
     url('../../static/one_piece.png') center/cover no-repeat;
 }
 
+/* Text container within featured series banner */
 .series__block_info {
   position: absolute;
   left: 15%;
   color: rgba(255, 255, 255, 0.955);
 }
 
+/* Main title in featured series banner */
 .series__block_info h1 {
   font-size: 40px;
   margin-top: 4em;
+  color: white;
+  font-family: 'Baloo 2', cursive;
 }
 
-.series__block_info h2 {
-  font-size: 25px;
+/* Description text in featured series banner */
+.series__block_info p {
+  font-size: 20px;
   width: 50vw;
-  margin-top: 10em;
+  margin-top: 5em;
+  color: white;
+  font-family: 'Baloo 2', cursive;
 }
 
+/* Base styles for navigation arrows */
 .series__block_arrow {
   position: absolute;
   top: 50%;
@@ -87,14 +113,17 @@ body {
   justify-content: center;
 }
 
+/* Previous arrow positioning */
 .series__block_arrow--prev {
   left: 50px;
 }
 
+/* Next arrow positioning */
 .series__block_arrow--next {
   right: 50px;
 }
 
+/* Arrow icon created with CSS borders */
 .series__block_arrow::before {
   content: "";
   width: 55px;
@@ -108,18 +137,22 @@ body {
   will-change: transform;
 }
 
+/* Next arrow rotation */
 .series__block_arrow--next::before {
   transform: rotate(-135deg);
 }
 
+/* Hover animation for previous arrow */
 .series__block_arrow:hover::before {
   transform: scale(1.06) rotate(45deg);
 }
 
+/* Hover animation for next arrow */
 .series__block_arrow--next:hover::before {
   transform: scale(1.06) rotate(-135deg);
 }
 
+/* Active state for arrows when clicked */
 .series__block_arrow:active::before {
   opacity: .75;
 }
