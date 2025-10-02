@@ -6,6 +6,11 @@
         <title>My Web Page</title>
         <link rel="stylesheet" href="styles.css">
         <style>
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
             .small_news_header {
                 height: 10vh;
                 width: 30vw;
@@ -38,7 +43,9 @@
             }
             .footer {
                 position: relative;
-                margin-top: 30vh;
+
+                margin-top: auto;
+                margin-bottom: 0;
             }
             .footer_main_text_container {
                 position: relative;
