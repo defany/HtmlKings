@@ -36,6 +36,55 @@
                 align-items: center;
                 gap: 0.5vw;
             }
+            .footer {
+                position: relative;
+                margin-top: 30vh;
+            }
+            .footer_main_text_container {
+                position: relative;
+                height: 10vh;
+                width: 80vw;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .footer_main_text {
+                text-align: center;
+                line-height: 2vh;
+            }
+            .footer_datelogos_container {
+                margin: auto;
+                height: 5vh;
+                width: 80vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                /*gap: 5vw;*/
+            }
+            .footer_logos_container {
+                display: flex;
+                justify-content: right;
+                align-items: right;
+                align-content: right;
+                margin-left: auto;
+                margin-right: 0;
+                gap: 2vw;
+            }
+            .footer_date_text {
+                height: 5vh;
+                width: 20vw;
+                margin-top: 5vh;
+                text-align: center;
+            }
+            .footer_socialmedia_icon {
+                height: 5vh;
+                width: 5vh;
+                margin: auto;
+            }
+            
         </style>
     </head>
     <body>
@@ -82,5 +131,26 @@
                 </div>
             </div>
         </section>
+
+        <footer class = "footer">
+        <br><br>
+        <hr>
+        
+            <div class = "footer_main_text_container">
+                <div class = "footer_main_text">© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ | Contact</div>
+                <div class = "footer_main_text">All rights reserved. All trademarks and logos are property of their respective owners.</div>
+            </div>
+            <section class = "footer_datelogos_container">
+                <div class = "footer_date_text">Last Updated: 01/10/2025</div>
+                <div class = "footer_logos_container">
+                    <img class = "footer_socialmedia_icon" src="src/facebook_logo.png" alt="Facebook logo">
+                    <img class = "footer_socialmedia_icon" src="src/facebook_logo.png" alt="Facebook logo">
+                    <img class = "footer_socialmedia_icon" src="src/facebook_logo.png" alt="Facebook logo">
+                    <img class = "footer_socialmedia_icon" src="src/facebook_logo.png" alt="Facebook logo">
+                </div>
+            </section>
+
+        <br>
+        </footer>
     </body>
 </html>
