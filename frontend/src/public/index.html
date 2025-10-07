@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../styles/index.css" rel="stylesheet" type="text/css" />
-    <title>Anime News</title>
+    <title>Anime Haven</title>
 </head>
 
 <body>
@@ -20,20 +20,11 @@
         <!--------------------------------------------------------------------------------------------->
         <section class="series__block_info">
             <h1>One Piece</h1>
-            <p>
-                One Piece is a Japanese manga series written and illustrated by
-                Eiichiro Oda in 1996. It follows the adventures of Monkey D. Luffy and
-                his crew, the Straw Hat Pirates, as he explores the Grand Line in
-                search of the mythical treasure known as the "One Piece" to become the
-                next King of the Pirates.
-            </p>
+            <p>New episodes every Sunday 8:45 AM Pacific Time (PT)</p>
         </section>
         <!--------------------------------------------------------------------------------------------->
         <!--Series Description End-->
         <!--------------------------------------------------------------------------------------------->
-
-        <button class="series__block_arrow series__block_arrow--prev" aria-label="Previous"></button>
-        <button class="series__block_arrow series__block_arrow--next" aria-label="Next"></button>
     </section>
     <!--------------------------------------------------------------------------------------------->
     <!--Series Container End-->
@@ -45,125 +36,88 @@
     <!--------------------------------------------------------------------------------------------->
 
     <!-- Heading for Popular anime slider begins here-->
-    <h2 class="homepage_slider_header">
+    <h2 class="main_slider_header">
         Current trending series
     </h2>
-    <!-- Heading for Popular anime slider ends here-->
 
-    <section class="grid_slider_layout">
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn one Start-->
-        <!--------------------------------------------------------------------------------------------->
-        <section>
+    <section class="slider_layout">
+        <!-- first container in the grid flex layout, Arrow previous -->
+        <div>
+            <span class="arrow_previous"></span>
+        </div>
 
-            <!-- Top div -->
-            <div>
-                <img src="../../static/one_piece_poster.png" , alt="Poster image of anime site"
-                    class="homepage_slider_img" />
-            </div>
+        <!-- second container in the grid flex layout, organises each column -->
+        <div class="slider_container">
 
-            <!-- Bottom div -->
-            <div>
-
-                <h3 class="homepage_slider_description_header">One Piece</h3>
-                <p class="homepage_slider_paragraph">The epic tale of Monkey D. Luffy and his pirate crew
+            <!--------------------------------------------------------------------------------------------->
+            <!--Column one-->
+            <!--------------------------------------------------------------------------------------------->
+            <section>
+                <div>
+                    <img src="../../static/one_piece_poster.png" alt="Poster image of >One piece"
+                        class="slider_image_format">
+                </div>
+                <h3 class="sub_heading">One piece</h3>
+                <p class="sub_paragraph">The epic tale of Monkey D. Luffy and his pirate crew
                     sailing across dangerous seas in search of the ultimate treasure.
                     With rubber-like powers from eating a Devil Fruit, Luffy battles powerful foes while
                     making unforgettable friends on his journey to become King of the Pirates.</p>
-            </div>
+            </section>
 
-        </section>
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn one Ends-->
-        <!--------------------------------------------------------------------------------------------->
+            <!--------------------------------------------------------------------------------------------->
+            <!--Column two-->
+            <!--------------------------------------------------------------------------------------------->
+            <section>
+                <div>
+                    <img src="../../static/JJK_Poster.png" alt="Poster image of Jujutsu Kaisen"
+                        class="slider_image_format">
+                </div>
+                <h3 class="sub_heading">Jujutsu Kaisen</h3>
+                <p class="sub_paragraph">High school student Yuji Itadori swallows a cursed finger to save
+                    friends, becoming host to the powerful curse Sukuna.
+                    He enters the dangerous world of Jujutsu Sorcerers who battle curses while
+                    training to control the deadly power within him.</p>
+            </section>
 
+            <!--------------------------------------------------------------------------------------------->
+            <!--Column three-->
+            <!--------------------------------------------------------------------------------------------->
+            <section>
+                <div>
+                    <img src="../../static/attack_on_titan_poster.png" alt="Poster image of Attack on Titan"
+                        class="slider_image_format">
+                </div>
+                <h3 class="sub_heading">Attack on Titan</h3>
+                <p class="sub_paragraph">To combat the man-eating Titans that have forced humanity behind massive walls,
+                    young Eren Yeager joins the military. After his home is destroyed, he fights to reclaim the world
+                    from the giants in a brutal and desperate war for survival.</p>
+            </section>
 
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn Two Start-->
-        <!--------------------------------------------------------------------------------------------->
-        <section>
-
-            <!-- Top div -->
-            <div>
-                <img src="../../static/Dandadan_Poster.png" alt="Poster image of anime site"
-                    class="homepage_slider_img" />
-            </div>
-
-            <!-- Bottom div -->
-            <div>
-
-                <h3 class="homepage_slider_description_header">Dandadan</h3>
-                <p class="homepage_slider_paragraph">A quirky supernatural adventure where a high school girl
+            <!--------------------------------------------------------------------------------------------->
+            <!--Column four-->
+            <!--------------------------------------------------------------------------------------------->
+            <section>
+                <div>
+                    <img src="../../static/Dandadan_Poster.png" alt="Poster image of Dandadan"
+                        class="slider_image_format">
+                </div>
+                <h3 class="sub_heading">Dandadan</h3>
+                <p class="sub_paragraph">A quirky supernatural adventure where a high school girl
                     who believes in ghosts teams up with a boy who believes in aliens.
                     Together they encounter bizarre spirits, aliens, and cosmic mysteries while navigating their
                     awkward teenage relationship.</p>
-            </div>
+            </section>
+        </div>
 
-        </section>
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn Two Ends-->
-        <!--------------------------------------------------------------------------------------------->
-
-
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn Three Start-->
-        <!--------------------------------------------------------------------------------------------->
-        <section>
-
-            <!-- Top div -->
-            <div>
-                <img src="../../static/JJK_Poster.png" alt="Poster image of anime site" class="homepage_slider_img" />
-            </div>
-
-            <!-- Bottom div -->
-            <div>
-
-                <h3 class="homepage_slider_description_header">Jujutsu Kaisen</h3>
-                <p class="homepage_slider_paragraph">High school student Yuji Itadori swallows a cursed finger to save
-                    friends,
-                    becoming host to the powerful curse Sukuna.
-                    He enters the dangerous world of Jujutsu Sorcerers who battle curses while
-                    training to control the deadly power within him.</p>
-            </div>
-
-        </section>
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn Three Ends-->
-        <!--------------------------------------------------------------------------------------------->
-
-
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn Four Start-->
-        <!--------------------------------------------------------------------------------------------->
-        <section>
-
-            <!-- Top div -->
-            <div>
-                <img src="../../static/attack_on_titan_poster.png" alt="Poster image of anime site"
-                    class="homepage_slider_img" />
-            </div>
-
-            <!-- Bottom div -->
-
-            <div">
-
-                <h3 class="homepage_slider_description_header">Attack on Titan</h3>
-                <p class="homepage_slider_paragraph">
-                    The epic tale of Monkey D. Luffy and his pirate crew sailing across dangerous
-                    seas in search of the ultimate treasure. With rubber-like powers from eating a
-                    Devil Fruit, Luffy battles powerful foes while making unforgettable friends on his
-                    journey to become King of the Pirates.</p>
-                </div>
-
-        </section>
-        <!--------------------------------------------------------------------------------------------->
-        <!--Colomn Four Ends-->
-        <!--------------------------------------------------------------------------------------------->
-
+        <!-- third container in the grid flex layout, Arrow next -->
+        <div>
+            <span class="arrow_next"></span>
+        </div>
     </section>
     <!--------------------------------------------------------------------------------------------->
     <!--Trending anime slider Ends-->
     <!--------------------------------------------------------------------------------------------->
+
 </body>
 
 </html>
