@@ -20,13 +20,13 @@ Homepage:
 -	A comfortable form for any feedback
 
 # Structure of the project:
-fronted/
-	src/
-		app/
-			*future JS files*
-		public/
-			*HTML files*
-		styles/
-			*CSS files
-	static/
-		*all the images*
+# fronted/
+	## src/
+		### app/
+			#### *future JS files*
+		### public/
+			#### *HTML files*
+		### styles/
+			#### *CSS files
+	## static/
+		### *all the images*
