@@ -1,14 +1,17 @@
+/* Main body styling with light blue background and cursive font */
 body {
   background-color: #79edff70;
   font-family: cursive;
 }
 
+/* Greeting section at top of about page */
 .greeting__block {
   padding-top: 15vh;
   text-align: center;
   line-height: 1.2;
 }
 
+/* Main heading in greeting section */
 .greeting__block h1 {
   font-size: 56px;
   font-weight: 700;
@@ -16,6 +19,7 @@ body {
   color: #000;
 }
 
+/* Subheading in greeting section with author name */
 .greeting__block h2 {
   font-size: 66px;
   font-weight: 700;
@@ -23,23 +27,34 @@ body {
   color: #222;
 }
 
+/* Container for about page content sections */
 .about_section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2.5rem 1rem;
 }
 
+/* Flex container for about page rows */
 .about_row {
   display: flex;
-  align-items: flex-start;  
+  align-items: flex-start;
   justify-content: center;
   gap: 4rem;
   flex-wrap: nowrap;
   margin-top: 1rem;
 }
-.about_row--left   { flex-direction: row; }
-.about_row--right  { flex-direction: row-reverse; }
 
+/* Left-aligned row (image on left, text on right) */
+.about_row--left {
+  flex-direction: row;
+}
+
+/* Right-aligned row (image on right, text on left) */
+.about_row--right {
+  flex-direction: row-reverse;
+}
+
+/* Container for about page photos */
 .about_photo {
   flex: 0 0 400px;
   display: flex;
@@ -47,15 +62,17 @@ body {
   align-items: flex-start;
 }
 
+/* About page photo styling */
 .about_photo img {
   width: 100%;
   max-width: 400px;
-  height: 60vh;            
+  height: 60vh;
   max-height: 720px;
   border-radius: 10px;
   object-fit: cover;
 }
 
+/* Container for about page text content */
 .about_text {
   flex: 1;
   display: flex;
@@ -65,12 +82,14 @@ body {
   gap: 0.5rem;
 }
 
+/* About page section headings */
 .about_text h3 {
-  font-size: 3.2rem;        
+  font-size: 3.2rem;
   font-weight: 700;
   margin: 0 0 .5rem 0;
 }
 
+/* About page paragraph text */
 .about_text p {
   margin: .25rem 0;
   line-height: 1.6;
@@ -78,63 +97,107 @@ body {
   text-align: left;
 }
 
+/* Favorite anime section with background image */
 .favorite_animes {
-  position: relative;                          
+  position: relative;
   width: min(900px, 65vw);
   height: min(580px, 58vh);
   margin: 2rem auto;
   border-radius: 10px;
-  overflow: hidden;                             
-  background: 
-    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
     url('../../static/one_piece.png') center/cover no-repeat;
 }
 
+/* Favorite anime title overlay */
 .favorite_animes h3 {
   position: absolute;
   top: 6%;
   left: 6%;
-  right: 6%;                                    
+  right: 6%;
   margin: 0;
   color: #fff;
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 700;
-  text-shadow: 0 2px 6px rgba(0,0,0,.45);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, .45);
 }
 
+/* Favorite anime description overlay */
 .favorite_animes p {
   position: absolute;
   left: 6%;
   right: 6%;
   bottom: 6%;
   margin: 0;
-  box-sizing: border-box;                        
+  box-sizing: border-box;
   padding: 1rem 1.25rem;
   color: #fff;
   line-height: 1.6;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  background: rgba(0,0,0,.45);                  
+  background: rgba(0, 0, 0, .45);
   border-radius: 10px;
   backdrop-filter: blur(2px);
 }
 
+/* Favorite anime section title */
 .favorite_animes_section__title {
   font-size: 2.5em;
   text-align: center;
 }
 
-@media (max-width: 992px){
-  .about_row { flex-wrap: wrap; gap: 2rem; }
-  .about_photo { flex: 0 1 100%; justify-content: center; }
-  .about_photo img { height: 48vh; max-width: 70%; }
-  .about_text { align-items: flex-start; }
-  .about_text h3 { font-size: clamp(2rem, 6vw, 3rem); }
-  .about_text p  { font-size: clamp(1rem, 2.2vw, 1.2rem); }
+/* Tablet and smaller screen responsive styles */
+@media (max-width: 992px) {
+  .about_row {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .about_photo {
+    flex: 0 1 100%;
+    justify-content: center;
+  }
+
+  .about_photo img {
+    height: 48vh;
+    max-width: 70%;
+  }
+
+  .about_text {
+    align-items: flex-start;
+  }
+
+  .about_text h3 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .about_text p {
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+  }
 }
 
-@media (max-width: 520px){
-  .favorite_animes { width: 92vw; height: 56vh; }
-  .favorite_animes h3 { top: 5%; left: 5%; right: 5%; }
-  .favorite_animes p  { left: 5%; right: 5%; bottom: 5%; padding: .75rem 1rem; }
-  .about_photo img    { max-width: 90%; height: 44vh; }
+/* Mobile responsive styles */
+@media (max-width: 520px) {
+  .favorite_animes {
+    width: 92vw;
+    height: 56vh;
+  }
+
+  .favorite_animes h3 {
+    top: 5%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .favorite_animes p {
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    padding: .75rem 1rem;
+  }
+
+  .about_photo img {
+    max-width: 90%;
+    height: 44vh;
+  }
 }
