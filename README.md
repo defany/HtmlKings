@@ -11,11 +11,11 @@ Homepage:
 -	Information about new series
 -	Huge major announcements in anime world
 
-# About page:
+About page:
 -	Personal information about the site owner
 -	Website mission and goals
 
-# Contact page:
+Contact page:
 -	Owner’s social media links
 -	A comfortable form for any feedback
 
