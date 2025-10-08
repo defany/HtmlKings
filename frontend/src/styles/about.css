@@ -1,9 +1,10 @@
 body {
-  background-color: #79edff70;
+	background-color: #79edff70;
+	font-family: cursive;
 }
 
 .greeting__block {
-	padding-top: 10vh;
+	padding-top: 15vh;
 	text-align: center;
 	line-height: 1.2;
 }
@@ -55,7 +56,7 @@ body {
 .about_photo img {
 	width: 100%;
 	max-width: 400px;
-	height: auto;
+	height: 65vh;
 	border-radius: 10px;
 	object-fit: cover;
 }
@@ -84,7 +85,7 @@ body {
 
 .favorite_animes {
 	display: block;
-	margin: auto; 
+	margin: auto;
 	width: 65vw;
 	height: 58vh;
 	border-radius: 10px;
@@ -95,18 +96,18 @@ body {
 }
 
 .favorite_animes h3 {
-  font-size: 3em;
-  padding-top: 12vh;
-  padding-left: 10vw;
-  color: rgb(255, 255, 255);
+	font-size: 3em;
+	padding-top: 12vh;
+	padding-left: 10vw;
+	color: rgb(255, 255, 255);
 }
 
 .favorite_animes p {
-  font-size: 1.5em;
-  padding-top: 12vh;
-  padding-left: 30vw;
-  padding-right: 5vw;
-  color: rgb(255, 255, 255);
+	font-size: 1.25em;
+	padding-top: 9.5vh;
+	padding-left: 30vw;
+	padding-right: 5vw;
+	color: rgb(255, 255, 255);
 }
 
 .favorite_animes_section__title {
