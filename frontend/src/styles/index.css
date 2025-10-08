@@ -9,7 +9,7 @@ body {
 
 /* Featured series banner at top of homepage */
 .series__block {
-    height: 90vh;
+    height: 95vh;
     position: relative;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
