@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/index.css" rel="stylesheet" type="text/css" />
+    <title>Anime Haven/Contacts</title>
+</head>
+
+<body>
+
+    <!--------------------------------------------------------------------------------------------->
+    <!--Navigation Bar Begin-->
+    <!--------------------------------------------------------------------------------------------->
+    <section class="nav_bar_layout">
+
+        <!--Homepage Button-->
+        <div id="homepage_button">
+            <a href="index.html"><img src="../../static/Homepage_image.png"
+                    alt="Image of our homepage navigation bar button" id="homepage_button_img" /></a>
+        </div>
+
+        <!--Other Buttons-->
+        <div>
+            <a href="about.html"><span class="navbar_other_buttons">About Author</span></a>
+            <a href="contacts.html"><span class="navbar_other_buttons">Contact Us</span></a>
+            <span class="navbar_other_buttons">Forums</span>
+            <span class="navbar_other_buttons">Shop</span>
+            <span class="navbar_other_buttons">FAQ</span>
+        </div>
+
+        <!--Profile Button-->
+        <div id="profile_button">
+            Profile
+        </div>
+
+    </section>
+    <!--------------------------------------------------------------------------------------------->
+    <!--Navigation Bar End-->
+    <!--------------------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------------------------------------------->
+    <!--Form Begin-->
+    <!--------------------------------------------------------------------------------------------->
+    <form id="form_overall_container_layout">
+
+        <h2 id="form_header">Share Your Thoughts, Report Bugs, or Ask Questions</h2>
+
+        <!--FULLNAME-->
+        <div class="form_div_layout">
+
+            <label for="user_name" class="form_text_style">Full name (required):</label>
+            <input type="text" id="user_name" name="user_name"
+                placeholder="Tell us your name, we would love to hear from you." class="form_input_style" required>
+
+        </div>
+
+        <!--EMAIL ADDRESS-->
+        <div class="form_div_layout">
+
+            <label for="user_email_address" class="form_text_style">Email Address (required):</label>
+            <input type="email" id="user_email_address" name="email_address" placeholder="ReallyCoolEmail@gmail.com"
+                class="form_input_style" required>
+
+        </div>
+
+        <!--PHONE NUMBER WITH INPUT MASK-->
+        <div class="form_div_layout">
+
+            <label for="user_phone_number" class="form_text_style">Phone number:</label>
+            <input type="tel" id="user_phone_number" name="user_phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="333-222-5555" title="Please use format: 555-123-4567" class="form_input_style">
+
+        </div>
+
+        <!--DROP DOWN BOX-->
+        <div class="form_div_layout">
+
+            <label for=" user_contact_reason" class="form_text_style">Reason for contacting us (required):</label>
+            <select id="user_contact_reason" name="user_contact_reason" class="form_input_style" required>
+                <option value="">Select one please</option>
+                <option value="Review and suggestions">Website review and suggestions</option>
+                <option value="Bug">Report a bug</option>
+                <option value="General question">Ask us a question</option>
+                <option value="Other">Other</option>
+            </select>
+
+        </div>
+
+        <!--ADDITIONAL NOTES/TEXT BOX AREA-->
+        <div class="form_div_layout">
+
+            <label for="text_box" class="form_text_style">Additional notes:</label>
+            <textarea id="text_box" name="text_box" class="form_input_style">
+        </textarea>
+
+        </div>
+
+        <!--SUBMIT FORM AND REST FORM BUTTONS-->
+        <div class="form_div_layout">
+
+            <button type="submit" class="form_button_style">Submit form</button>
+            <button type="reset" class="form_button_style">Clear form</button>
+
+        </div>
+    </form>
+    <!--------------------------------------------------------------------------------------------->
+    <!--Form End-->
+    <!--------------------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------------------------------------------->
+    <!--Footer starts-->
+    <!--------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <br><br>
+        <hr>
+
+        <!--Main footer text section with copyright and legal links-->
+        <div class="footer_main_text_container">
+            <div class="footer_main_text">© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ | Contact</div>
+            <div class="footer_main_text">All rights reserved. All trademarks and logos are property of their respective
+                owners.
+            </div>
+        </div>
+        <!--Footer bottom section with date and social media icons-->
+        <section class="footer_datelogos_container">
+            <!--Last updated date display-->
+            <div class="footer_date_text">Last Updated: 08/10/2025</div>
+            <!--Social media icons container-->
+            <div class="footer_logos_container">
+                <img class="footer_socialmedia_icon" src="../../static/discord_image.png" alt="Discord Logo">
+                <img class="footer_socialmedia_icon" src="../../static/facebook_image.png" alt="Facebook logo">
+                <img class="footer_socialmedia_icon" src="../../static/instagram_image.png" alt="Instagram logo">
+                <img class="footer_socialmedia_icon" src="../../static/x_image.png" alt="X logo">
+            </div>
+        </section>
+
+        <br>
+    </footer>
+    <!--------------------------------------------------------------------------------------------->
+    <!--Footer Ends-->
+    <!--------------------------------------------------------------------------------------------->
+
+</body>
+
+</html>
