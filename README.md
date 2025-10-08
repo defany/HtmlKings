@@ -21,12 +21,12 @@ Homepage:
 
 # Structure of the project:
 # fronted/
-	## src/
-		### app/
-			#### *future JS files*
-		### public/
-			#### *HTML files*
-		### styles/
-			#### *CSS files
-	## static/
-		### *all the images*
+	src/
+		app/
+			*future JS files*
+		public/
+			*HTML files*
+		styles/
+			*CSS files
+	static/
+		*all the images*
